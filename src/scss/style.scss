@@ -1,7 +1,42 @@
-$font-stack:    Helvetica, sans-serif;
+$font-stack:    'Open Sans', sans-serif;
 $primary-color: #333;
+$nav-primary-color: #28383e;
+$nav-primary-color-active: #202b30;
+$navbar-border-active: #58d2ce;
+$title-background: #eeac55;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+.bg-primary{
+	background-color: $nav-primary-color !important; /* important to override bootstrap default background-color*/
+}
+.navbar{
+	padding-bottom: 0;
+	padding-top: 0;
+	.navbar-nav .active>.nav-link{
+		background: $nav-primary-color-active;
+		color: white !important;
+		font-weight: 900;
+		border-bottom: 2px solid $navbar-border-active;
+	}
+}
+#main-navbar{
+	li.nav-item {
+		a{
+			text-transform: uppercase;
+			padding-bottom: 1.5em;
+			padding-top: 1.5em;
+		}
+	}
+}
+#hero-header{
+	.hero-title {
+		span{
+			padding-left: 10px;
+			background: $title-background;
+			color: white;
+		}
+	}
 }
