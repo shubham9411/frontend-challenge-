@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Kisan Network</title>
+	<title>Frontend Challenge - Kisan Network</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link href="dist/css/style.min.css" rel="stylesheet">
@@ -29,16 +28,16 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Themes</a>
+							<a class="nav-link" href="#">Testimonials</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Resume</a>
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Jobs</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Extra</a>
 						</li>
 					</ul>
 				</div>
@@ -63,10 +62,10 @@
 			<div class="row">
 				<div class="col-12 col-md-9 mt-5">
 					<div>
-						<h1 class="display-6">
+						<h1 class="display-6 title">
 							<b>Curabitur non mattis elit</b>
 						</h1>
-						<h4 class="pt-3">
+						<h4 class="pt-3 subtitle">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus metus. Suspendisse quam turpis, congue sagittis
 							quam et, facilisis lobortis est. Nam consectetur viverra dui ut viverra.
 						</h4>
@@ -89,7 +88,7 @@
 							id porta. Curabitur quam neque, ultrices in eros eget, maximus rhoncus lorem. Quisque quis augue dignissim, tincidunt
 							enim non, blandit eros. Nulla facilisi. In sodales justo quis eros malesuada, id laoreet odio dapibus. Nulla eleifend
 							neque vestibulum est aliquet viverra. Quisque venenatis et augue in placerat.
-							<img class="img-fluid quote-image" src="http://via.placeholder.com/350x200"> Sed vel mi sit amet justo fermentum fringilla vel ac nulla. Nulla tristique aliquam magna, id consequat enim iaculis
+							<img class="img-fluid quote-image" src="dist/img/quote.png"> Sed vel mi sit amet justo fermentum fringilla vel ac nulla. Nulla tristique aliquam magna, id consequat enim iaculis
 							et. Morbi auctor arcu vel augue pharetra, sed pellentesque augue suscipit. Pellentesque porttitor lectus dolor, a
 							consequat eros porttitor nec. Curabitur auctor neque nisi, vitae varius tortor ornare et. In ac neque eu massa finibus
 							fermentum. Aenean at congue mi. Nulla ultricies odio eget tortor fermentum, non maximus quam ullamcorper. Donec quam
@@ -109,7 +108,7 @@
 						<article class="pt-3 blogs">
 							<div class="row">
 								<div class="col-12 col-md-3">
-									<img class="img-fluid" src="http://via.placeholder.com/500x400">
+									<img class="blog-thumbnail img-fluid" src="dist/img/blog-img-1.jpg">
 								</div>
 								<div class="col-12 col-md-9">
 									<h3 class="blog-title text-success">Quisque elementum pulvinar semper.</h3>
@@ -120,7 +119,7 @@
 							</div>
 							<div class="row pt-4">
 								<div class="col-12 col-md-3">
-									<img class="img-fluid" src="http://via.placeholder.com/500x400">
+									<img class="blog-thumbnail img-fluid" src="dist/img/blog-img-2.jpg">
 								</div>
 								<div class="col-12 col-md-9">
 									<h3 class="blog-title text-success">Donec tristique odio sed risus.</h3>
@@ -136,8 +135,7 @@
 
 				<div class="col-12 col-md-3 sidebar mt-5">
 					<div class="card mb-3">
-						<!-- <div class="card-header">Header</div> -->
-						<div class="card-body">
+						<div class="card-body pb-0">
 							<h4 class="card-title text-center">
 								<b>Submenu</b>
 							</h4>
@@ -158,17 +156,17 @@
 						</ul>
 					</div>
 					<div class="card">
-						<img class="card-img-top cover-image" src="http://via.placeholder.com/300x200" alt="Card image cap">
+						<img class="card-img-top cover-image" src="dist/img/cover-image.jpeg" alt="Card image cap">
 						<div class="profile-picture bg-grey">
-							<img class="rounded-circle" src="http://via.placeholder.com/300x300" alt="Card image cap">
+							<img class="rounded-circle" src="dist/img/profile-picture.jpeg" alt="Card image cap">
 						</div>
 						<div class="card-body bg-grey">
 							<h6>
-								<b>Name</b>&nbsp;&nbsp;&nbsp;Nomen Nescio</h6>
+								<b>Name</b>&nbsp;&nbsp;&nbsp;Shubham Pandey</h6>
 							<h6>
-								<b>Email</b>&nbsp;&nbsp;&nbsp;noman@example.com</h6>
+								<b>Email</b>&nbsp;&nbsp;&nbsp;shubham9411@gmail</h6>
 							<h6>
-								<b>Phone</b>&nbsp;&nbsp;&nbsp;+852 555 555</h6>
+								<b>Phone</b>&nbsp;&nbsp;&nbsp;+91 9756283293</h6>
 						</div>
 						<div class="card-body bg-grey-dark">
 							<h5 class="text-center">
@@ -180,7 +178,7 @@
 							</div>
 							<div class="form-group pt-3">
 								<label for="message">Message</label>
-								<textarea class="form-control" id="message" rows="5"></textarea>
+								<textarea class="form-control" id="message" rows="5" placeholder="Enter message here!"></textarea>
 								<small id="message-length" class="text-right form-text text-muted">0/140</small>
 							</div>
 							<button type="button" class="btn btn-success btn-lg btn-block">Send</button>
@@ -217,7 +215,7 @@
 			<div class="row">
 				<div class="col-md">
 					<div class="card mb-3">
-						<img style="height: 200px; width: 100%; display: block;" src="http://via.placeholder.com/300x200" alt="Card image">
+						<img class="blog-thumbnail" src="dist/img/blog-img-3.jpg" alt="Card image">
 						<div class="card-body">
 							<h4 class="card-title text-success">
 								<b>Aenean auctor magna massa, ut.</b>
@@ -229,7 +227,7 @@
 				</div>
 				<div class="col-md">
 					<div class="card mb-3">
-						<img style="height: 200px; width: 100%; display: block;" src="http://via.placeholder.com/300x200" alt="Card image">
+						<img class="blog-thumbnail" src="dist/img/blog-img-4.jpg" alt="Card image">
 						<div class="card-body">
 							<h4 class="card-title text-success">
 								<b>Integer ultrices risus et mauris.</b>
@@ -241,7 +239,7 @@
 				</div>
 				<div class="col-md">
 					<div class="card mb-3">
-						<img style="height: 200px; width: 100%; display: block;" src="http://via.placeholder.com/300x200" alt="Card image">
+						<img class="blog-thumbnail" src="dist/img/blog-img-5.jpg" alt="Card image">
 						<div class="card-body">
 							<h4 class="card-title text-success">
 								<b>Pellentesque vel sagittis ligula.</b>
@@ -255,7 +253,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="card mb-3">
-						<img style="height: 200px; width: 100%; display: block;" src="http://via.placeholder.com/300x200" alt="Card image">
+						<img class="blog-thumbnail" src="dist/img/blog-img-6.jpg" alt="Card image">
 						<div class="card-body">
 							<h4 class="card-title text-success">
 								<b>Class aptent taciti sociosqd.</b>
@@ -267,7 +265,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="card mb-3">
-						<img style="height: 200px; width: 100%; display: block;" src="http://via.placeholder.com/300x200" alt="Card image">
+						<img class="blog-thumbnail" src="dist/img/blog-img-7.jpg" alt="Card image">
 						<div class="card-body">
 							<h4 class="card-title text-success">
 								<b>Nam ultricies tincidunt neque et.</b>

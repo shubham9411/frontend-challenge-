@@ -32,6 +32,11 @@ body {
     color: white;
   }
 }
+@media (max-width: 991px) {
+  .hero-title span {
+    font-size: 1.5rem;
+  }
+}
 .quote-image {
   float: right;
   padding: 1em;
@@ -43,6 +48,7 @@ body {
 }
 .read-more .horizontal-line,
 #related-articles .horizontal-line {
+  line-height: 54px;
   text-align: center;
   background: linear-gradient(#ffffff 0%, #ffffff 48%, #cccccc 49%, #cccccc 55%, #ffffff 56%, #ffffff 100%);
 }
@@ -54,6 +60,15 @@ body {
 .read-more .blog-title,
 #related-articles .blog-title {
   font-weight: 900;
+}
+.read-more .card,
+#related-articles .card {
+  border-radius: 5px 5px 0 0;
+}
+.read-more .blog-thumbnail,
+#related-articles .blog-thumbnail {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 
 .sidebar .list-group-item {
@@ -67,6 +82,7 @@ body {
 }
 
 .profile-picture {
+  height: 3.5em;
   display: flex;
   justify-content: center;
 }
@@ -75,8 +91,12 @@ body {
   bottom: 3em;
   width: 100px;
   height: 100px;
+  border: 2px white solid;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .profile-picture {
+    height: 6.5em;
+  }
   .profile-picture img {
     position: relative;
     bottom: 6em;
@@ -96,6 +116,11 @@ body {
 #map {
   width: 100%;
   height: 10em;
+}
+@media (max-width: 991px) {
+  #map {
+    height: 25em;
+  }
 }
 
 .map-wrapper {

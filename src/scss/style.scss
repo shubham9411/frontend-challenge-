@@ -6,7 +6,6 @@ $navbar-border-active: #58d2ce;
 $title-background: #eeac55;
 $grey: #e9e7e8;
 $grey-dark: #d8d3d3;
-// $blog-title: #56c7b4;
 
 body {
   font: 100% $font-stack;
@@ -42,7 +41,13 @@ body {
 				background: $title-background;
 				color: white;
 			}
+			
 		}
+	}
+}
+@media (max-width: 991px) {
+	.hero-title span{
+		font-size: 1.5rem;
 	}
 }
 .quote-image{
@@ -53,6 +58,7 @@ body {
 #related-articles{
 	padding-top: 6em;
 	.horizontal-line{
+		line-height: 54px;
 		text-align: center;
 		background: linear-gradient(#ffffff 0%, #ffffff 48%, #cccccc 49%, #cccccc 55%, #ffffff 56%, #ffffff 100%);
 		span{
@@ -62,7 +68,13 @@ body {
 	}
 	.blog-title{
 		font-weight: 900;
-		// color: $blog-title;
+	}
+	.card{
+		border-radius: 5px 5px 0 0;
+	}
+	.blog-thumbnail{
+		border-radius: 5px 5px 0 0;
+		width: 100%;
 	}
 }
 .sidebar{
@@ -77,6 +89,7 @@ body {
 	}
 }
 .profile-picture{
+	height: 3.5em;
 	display: flex;
     justify-content: center;
 	img{
@@ -84,8 +97,10 @@ body {
 		bottom: 3em;
 		width: 100px;
 		height: 100px;
+		border: 2px white solid;
 	}
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
+		height: 6.5em;
 		img{
 			position: relative;
 			bottom: 6em;
@@ -103,6 +118,9 @@ body {
 #map{
 	width: 100%;
 	height: 10em;
+	@media (max-width: 991px) {
+		height: 25em;
+	}
 }
 .map-wrapper{
 	padding-left: 0;
