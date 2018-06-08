@@ -8,12 +8,13 @@
 	<title>Kisan Network</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-	<link href="dist/css/style.css" rel="stylesheet">
+	<link href="dist/css/style.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
 	 crossorigin="anonymous"></script>
 	<script src="dist/js/main.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 
 <body>
@@ -80,6 +81,13 @@
 							in. Mauris erat felis, sollicitudin elementum leo eu, rutrum finibus risus.
 						</p>
 						<p class="pt-3">
+							Sed semper rhoncus auctor. Aliquam finibus libero quis pretium consectetur. Sed quam dui, semper quis erat eget, tempus sollicitudin
+							odio. Nulla fringilla velit ligula, id suscipit ligula consequat a. Orci varius natoque penatibus et magnis dis parturient
+							montes, nascetur ridiculus mus. Morbi tortor mauris, finibus at lobortis quis, vehicula id lectus. Nam vel leo at
+							dui ultrices accumsan. Sed nec metus ac sem tincidunt semper. Aliquam accumsan euismod enim, at egestas elit lacinia
+							in. Mauris erat felis, sollicitudin elementum leo eu, rutrum finibus risus.
+						</p>
+						<p class="pt-3">
 							Curabitur non mattis elit, vel sollicitudin orci. Ut ac risus sed quam bibendum facilisis id eu elit. Proin ultrices in felis
 							id porta. Curabitur quam neque, ultrices in eros eget, maximus rhoncus lorem. Quisque quis augue dignissim, tincidunt
 							enim non, blandit eros. Nulla facilisi. In sodales justo quis eros malesuada, id laoreet odio dapibus. Nulla eleifend
@@ -107,7 +115,7 @@
 									<img class="img-fluid" src="http://via.placeholder.com/500x400">
 								</div>
 								<div class="col-xs-12 col-md-9">
-									<h3 class="blog-title">Quisque elementum pulvinar semper.</h3>
+									<h3 class="blog-title text-success">Quisque elementum pulvinar semper.</h3>
 									<p>Cras dapibus odio quis lacus malesuada elementum. Integer tristique ut odio at scelerisque. In commodo felis lorem,
 										at tempor neque bibendum id. Pellentesque tempor eget dolor in tincidunt. Suspendisse potenti. Integer at luctus
 										lectus. Nunc in leo accumsan, pharetra ligula ut, sodales diam. Nam non tincidunt tellus.</p>
@@ -118,16 +126,82 @@
 									<img class="img-fluid" src="http://via.placeholder.com/500x400">
 								</div>
 								<div class="col-xs-12 col-md-9">
-									<h3 class="blog-title">Donec tristique odio sed risus.</h3>
-									<p>Fusce sagittis ex ultricies erat commodo efficitur. In sagittis, nisi eget volutpat ornare, ligula dui hendrerit ligula, ut accumsan risus neque in leo. Suspendisse libero mauris, pulvinar at augue quis, scelerisque iaculis ipsum. Sed ac vehicula est. Nam quis auctor augue. Mauris enim nibh, tincidunt a quam at, tincidunt ultrices leo. Cras tincidunt mi a vulputate dictum.</p>
+									<h3 class="blog-title text-success">Donec tristique odio sed risus.</h3>
+									<p>Fusce sagittis ex ultricies erat commodo efficitur. In sagittis, nisi eget volutpat ornare, ligula dui hendrerit
+										ligula, ut accumsan risus neque in leo. Suspendisse libero mauris, pulvinar at augue quis, scelerisque iaculis
+										ipsum. Sed ac vehicula est. Nam quis auctor augue. Mauris enim nibh, tincidunt a quam at, tincidunt ultrices leo.
+										Cras tincidunt mi a vulputate dictum.</p>
 								</div>
 							</div>
 						</article>
 					</div>
 				</div>
 
-				<div class="col-12 col-md-3">
-					<h1>Side Bar</h1>
+				<div class="col-12 col-md-3 sidebar">
+					<div class="card mb-3">
+						<!-- <div class="card-header">Header</div> -->
+						<div class="card-body">
+							<h4 class="card-title text-center">
+								<b>Submenu</b>
+							</h4>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item text-success list-group-item-action">
+								<a href="#">Home</a>
+							</li>
+							<li class="list-group-item list-group-item-action active">
+								<a href="#">Example</a>
+							</li>
+							<li class="list-group-item text-success list-group-item-action">
+								<a href="#">Contact</a>
+							</li>
+							<li class="list-group-item text-success list-group-item-action">
+								<a href="#">About</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card">
+						<img class="card-img-top cover-image" src="http://via.placeholder.com/300x200" alt="Card image cap">
+						<div class="profile-picture bg-grey">
+							<img class="rounded-circle" src="http://via.placeholder.com/300x300" alt="Card image cap">
+						</div>
+						<div class="card-body bg-grey">
+							<h6>
+								<b>Name</b>&nbsp;&nbsp;&nbsp;Nomen Nescio</h6>
+							<h6>
+								<b>Email</b>&nbsp;&nbsp;&nbsp;noman@example.com</h6>
+							<h6>
+								<b>Phone</b>&nbsp;&nbsp;&nbsp;+852 555 555</h6>
+						</div>
+						<div class="card-body bg-grey-dark">
+							<h5 class="text-center">
+								<b>Send me a message</b>
+							</h5>
+							<div class="form-group pt-3">
+								<label for="subject">Subject</label>
+								<input type="password" class="form-control" id="subject" placeholder="subject">
+							</div>
+							<div class="form-group pt-3">
+								<label for="message">Message</label>
+								<textarea class="form-control" id="message" rows="5"></textarea>
+								<small id="message-length" class="text-right form-text text-muted">0/140</small>
+							</div>
+							<button type="button" class="btn btn-success btn-lg btn-block">Send</button>
+						</div>
+						<div class="card-body bg-grey map-wrapper">
+							<h5 class="text-center">
+								<b>Or meet me at the office</b>
+							</h5>
+							<div id="map"></div>
+						</div>
+						<div class="card-body bg-grey">
+							<address>
+								<h6 class="card-title">ONE MIDTOWN</h6>
+								<h6 class="card-title">11 Hoi Shing Rd</h6>
+								<h6 class="card-title">Tsuen Wan</h6>
+							</address>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -46,12 +46,20 @@ module.exports = function (grunt) {
 					'dist/js/main.min.js': ['src/js/main.js']
 				}
 			}
-		}
+		},
+		cssmin: {
+			target: {
+			  files: {
+				'dist/css/style.min.css': 'dist/css/style.css'
+			  }
+			}
+		  }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.registerTask('default', ['browserSync', 'watch']);
 };
