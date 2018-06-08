@@ -8,27 +8,49 @@ body {
   /* important to override bootstrap default background-color*/
 }
 
-.navbar {
-  padding-bottom: 0;
-  padding-top: 0;
+@media (min-width: 992px) {
+  .navbar {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .navbar .navbar-nav .active > .nav-link {
+    background: #202b30;
+    color: white !important;
+    font-weight: 900;
+    border-bottom: 2px solid #58d2ce;
+  }
+
+  #main-navbar li.nav-item a {
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  #hero-header .hero-title span {
+    padding-left: 10px;
+    background: #eeac55;
+    color: white;
+  }
 }
-.navbar .navbar-nav .active > .nav-link {
-  background: #202b30;
-  color: white !important;
+.quote-image {
+  float: right;
+  padding: 1em;
+}
+
+.read-more {
+  padding-top: 6em;
+}
+.read-more .horizontal-line {
+  text-align: center;
+  background: linear-gradient(#ffffff 0%, #ffffff 48%, #cccccc 49%, #cccccc 55%, #ffffff 56%, #ffffff 100%);
+}
+.read-more .horizontal-line span {
+  background: white;
+  padding: 10px;
+}
+.read-more .blog-title {
   font-weight: 900;
-  border-bottom: 2px solid #58d2ce;
-}
-
-#main-navbar li.nav-item a {
-  text-transform: uppercase;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
-}
-
-#hero-header .hero-title span {
-  padding-left: 10px;
-  background: #eeac55;
-  color: white;
+  color: #56c7b4;
 }
 
 /*# sourceMappingURL=dist/css/style.css.map */
