@@ -4,6 +4,8 @@ $nav-primary-color: #28383e;
 $nav-primary-color-active: #202b30;
 $navbar-border-active: #58d2ce;
 $title-background: #eeac55;
+$grey: #e9e7e8;
+$grey-dark: #d8d3d3;
 // $blog-title: #56c7b4;
 
 body {
@@ -48,7 +50,7 @@ body {
 	padding: 1em;
 }
 .read-more,
-.related-articles{
+#related-articles{
 	padding-top: 6em;
 	.horizontal-line{
 		text-align: center;
@@ -93,10 +95,10 @@ body {
 	}
 }
 .bg-grey{
-	background: #e9e7e8;
+	background: $grey;
 }
 .bg-grey-dark{
-	background: #d8d3d3;
+	background: $grey-dark;
 }
 #map{
 	width: 100%;
@@ -109,4 +111,12 @@ body {
 		padding: 1.25rem;
 	}
 
+}
+#footer{
+	padding: 2em 0;
+	background: #202b30;
+	color: white;
+	.footer-nav{
+		color: #ffffff5e;
+	}
 }

@@ -38,21 +38,21 @@ body {
 }
 
 .read-more,
-.related-articles {
+#related-articles {
   padding-top: 6em;
 }
 .read-more .horizontal-line,
-.related-articles .horizontal-line {
+#related-articles .horizontal-line {
   text-align: center;
   background: linear-gradient(#ffffff 0%, #ffffff 48%, #cccccc 49%, #cccccc 55%, #ffffff 56%, #ffffff 100%);
 }
 .read-more .horizontal-line span,
-.related-articles .horizontal-line span {
+#related-articles .horizontal-line span {
   background: white;
   padding: 10px;
 }
 .read-more .blog-title,
-.related-articles .blog-title {
+#related-articles .blog-title {
   font-weight: 900;
 }
 
@@ -104,6 +104,15 @@ body {
 }
 .map-wrapper h5 {
   padding: 1.25rem;
+}
+
+#footer {
+  padding: 2em 0;
+  background: #202b30;
+  color: white;
+}
+#footer .footer-nav {
+  color: #ffffff5e;
 }
 
 /*# sourceMappingURL=dist/css/style.css.map */
