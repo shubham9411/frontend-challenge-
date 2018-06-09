@@ -3,8 +3,11 @@
 ## Directory Structure
 
 --- dist (Concatentated and minified files)
+
 --- index.html
+
 --- src (Source files)
+
 --- [build tool files]
 
 ## Quick Start
